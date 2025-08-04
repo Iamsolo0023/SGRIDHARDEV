@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shridhar Developers</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    nav ul li a.active {
+      color: var(--gold);
+      font-weight: bold;
+    }
+    
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.6s ease-out;
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="container">
+      <div class="logo-wrapper">
+        <img src="images/logo.jpg" alt="Logo" />
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="seedetails.html">ABOUT</a></li>
+          <li><a href="#projects">RESIDENTIAL</a></li>
+          <li><a href="#">COMMERCIAL</a></li>
+          <li><a href="#">RENTALS</a></li>
+          <li><a href="#">HOSPITALITY</a></li>
+          <li><a href="#">RETAIL</a></li>
+          <li><a href="#blog">CAREERS</a></li>
+        </ul>
+      </nav>
+
+      <div class="cta-box">
+        <button class="cta-outline-btn">UPCOMING PROJECTS</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="overlay">
+      <div class="hero-content reveal">
+        <h1>BUILT WITH BELIEF <br />DELIVERED WITH HEART</h1>
+        <a href="#projects" class="hero-btn">View Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section about-section">
+    <div class="about-container">
+  <!-- Left Column -->
+  <div class="about-info reveal">
+    <div class="badge-row">
+      
+      <div class="badge-text">
+        <h3>Shridhar Developers</h3>
+      </div>
+    </div>
+    <p>
+      Shridhar Developers is dedicated to creating homes that embody peace, safety, and pride, driven by heartfelt commitment and trust. They've completed 25 projects with a focus on quality and emotional value. Their core belief is building homes with care, responsibility, and a sense of belonging.  
+    </p>
+    <a href="seedetails.html" class="about-cta">SEE DETAILS →</a>
+  </div>
+  
+  <!-- Right Column -->
+  <div class="about-stats-container reveal">
+    <div class="about-stats-grid">
+      <div class="stat-box">
+        <h2><span class="number">25</span><span class="plus">+</span></h2>
+        <p>Years of Excellence</p>
+      </div>
+      <div class="stat-box">
+        <h2><span class="number">30</span><span class="plus">+</span></h2>
+        <p>Projects Completed</p>
+      </div>
+      <div class="stat-box">
+        <h2><span class="number">180</span><span class="plus">+</span></h2>
+        <p>Mn. Sq. Ft. Delivered</p>
+      </div>
+      <div class="stat-box">
+        <h2><span class="number">170</span><span class="plus">+</span></h2>
+        <p>Mn. Sq. Ft. Underway</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </section>
+  
+
+  <!-- ===== PROJECTS SECTION ===== -->
+ <section id="project-segments" class="segments-section">
+  <h2>Operational Segments</h2>
+  <h3 class="section-title">Projects</h3>
+
+  <div class="tabs">
+    <button class="tab active" data-segment="residential">Residential</button>
+    <button class="tab" data-segment="commercial">Commercial</button>
+    <button class="tab" data-segment="hospitality">Hospitality</button>
+    <button class="tab" data-segment="retail">Retail</button>
+  </div>
+
+  <!-- Residential Projects -->
+  <div class="project-grid segment-grid active" data-segment="residential">
+    <div class="project-card">
+      <img src="images/Insert-Photo-Here.png" alt="Skyline Heights" />
+      <h4>Skyline Heights</h4>
+      <div class="project-label">Text</div>
+    </div>
+    <div class="project-card">
+      <img src="images/Insert-Photo-Here.png" alt="Green Valley Villas" />
+      <h4>Green Valley Villas</h4>
+      <div class="project-label">Text</div>
+    </div>
+    <div class="project-card">
+      <img src="images/Insert-Photo-Here.png" alt="Urban Nest" />
+      <h4>Urban Nest</h4>
+      <div class="project-label">Text</div>
+    </div>
+  </div>
+
+  <!-- Commercial Projects -->
+  <div class="project-grid segment-grid" data-segment="commercial">
+    <div class="project-card">
+      <img src="images/Insert-Photo-Here.png" alt="Janki Shridhar Tower" />
+      <h4>Janki Shridhar Tower</h4>
+      <div class="project-label">Completed</div>
+    </div>
+    <div class="project-card">
+      <img src="images/Insert-Photo-Here.png" alt="Shabu Tower" />
+      <h4>Shabu Tower</h4>
+      <div class="project-label">Completed</div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/Insert-Photo-Here.png" alt="LA DOLCE VITA Commercial" />
+      <h4>LA DOLCE VITA Commercial</h4>
+      <div class="project-label">Completed</div>
+    </div>
+    <div class="project-card">
+      <img src="images/Insert-Photo-Here.png" alt="ISPAP Commercial" />
+      <h4>ISPAP Commercial</h4>
+      <div class="project-label">Completed</div>
+    </div>
+  </div>
+
+  <!-- Hospitality Projects -->
+  <div class="project-grid segment-grid" data-segment="hospitality">
+    <div class="project-card">
+      <img src="images/ltp1.png" alt="Lemon Tree Premier" />
+      <h4>Lemon Tree Premier</h4>
+       <div class="project-label">Upcoming</div>
+    </div>
+  </div>
+
+  <!-- Retail Projects -->
+  <div class="project-grid segment-grid" data-segment="retail">
+    <div class="project-card">
+      <img src="images/Insert-Photo-Here.png" alt="Central Mall" />
+      <h4>Central Mall</h4>
+      <div class="project-label">Text</div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- ===== TESTIMONIALS SECTION ===== -->
+  <section id="testimonials" class="section testimonials">
+    <div class="container reveal">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial-list">
+        <div class="testimonial">
+          <p>"Shridhar Developers exceeded our expectations. The project delivery was on time and the quality was unmatched."</p>
+          <h4>- Ramesh Gupta</h4>
+        </div>
+        <div class="testimonial">
+          <p>"Professionalism, transparency and dedication is what sets them apart. Highly recommended."</p>
+          <h4>- Neha Sharma</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BLOG SECTION ===== -->
+  <section id="blog" class="section blog">
+    <div class="container reveal">
+      <h2>From Our Blog</h2>
+      <div class="blog-list">
+        <div class="blog-post">
+          <h3>Top 5 Real Estate Investment Tips in 2025</h3>
+          <p>Investing in property can be one of the smartest financial decisions. Here's what you need to know...</p>
+        </div>
+        <div class="blog-post">
+          <h3>Smart Living: The Rise of Tech-Enabled Homes</h3>
+          <p>From voice-activated lighting to smart security, explore the trends in modern housing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section contact">
+    <div class="container reveal">
+      <h2>Get in Touch</h2>
+      <p class="contact-intro">Have a project in mind, a question, or just want to say hello? Fill the form below and let's connect!</p>
+      <form class="contact-form" id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Shridhar Developers. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===== SCROLL TO TOP BUTTON ===== -->
+  <button id="scrollToTopBtn" title="Go to top">↑</button>
+
+  <!-- ===== INLINE SCRIPTS ===== -->
+  <script>
+    // Scroll nav highlight
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("nav ul li a");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      const scrollY = window.scrollY;
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 120;
+        const sectionHeight = section.offsetHeight;
+
+        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${current}`) {
+          link.classList.add("active");
+        }
+      });
+
+      // Scroll to top button toggle
+      const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+      scrollToTopBtn.style.display = scrollY > 300 ? "block" : "none";
+    });
+
+    // Reveal animation
+    function revealOnScroll() {
+      const reveals = document.querySelectorAll(".reveal");
+      const windowHeight = window.innerHeight;
+      const revealPoint = 100;
+
+      reveals.forEach(el => {
+        const elementTop = el.getBoundingClientRect().top;
+        if (elementTop < windowHeight - revealPoint) {
+          el.classList.add("active");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll);
+
+    // Scroll to top behavior
+    document.getElementById("scrollToTopBtn").addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    });
+
+    // Contact form validation
+    const contactForm = document.querySelector('.contact-form');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function (e) {
+        const name = this.querySelector('input[name="name"]').value.trim();
+        const email = this.querySelector('input[name="email"]').value.trim();
+        const message = this.querySelector('textarea[name="message"]').value.trim();
+
+        if (!name || !email || !message) {
+          e.preventDefault();
+          alert("Please fill out all fields before submitting.");
+          return;
+        }
+
+        const emailPattern = /^[^@]+@[^@]+\.[a-z]{2,}$/i;
+        if (!emailPattern.test(email)) {
+          e.preventDefault();
+          alert("Please enter a valid email address.");
+        }
+      });
+    }
+  </script>
+</body>
+</html>
